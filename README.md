@@ -234,6 +234,6 @@ spring.datasource.url=jdbc:h2:mem:testdb
 
 ## Notes
 
-- Built against **Spring Boot 4.0.5** / **Spring Security 7.0.4** — see [CHANGELOG.md](CHANGELOG.md) for a full list of deviations from the tutorial this project was based on
+- Built against **Spring Boot 4.0.5** / **Spring Security 7.0.4** — see [CHANGELOG.md](Changelog.md) for a full list of deviations from the tutorial this project was based on
 - `jakarta.*` packages are used throughout (not `javax.*`), as required by Jakarta EE 11
 - CSRF protection is disabled to allow stateless REST calls; re-enable for browser-facing applications
