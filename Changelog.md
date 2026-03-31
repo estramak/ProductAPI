@@ -174,7 +174,7 @@ public PasswordEncoder passwordEncoder() {
 }
 ```
 
-**Reason:** `User.withDefaultPasswordEncoder()` was deprecated in Spring Security 5 and **fully removed in Spring Security 7.0**. On this project's **Spring Security 7.0.4**, the tutorial code will not compile. A dedicated `BCryptPasswordEncoder` bean is the correct replacement — passwords are properly hashed before storage and the encoder is reusable across the application.
+**Reason:** `User.withDefaultPasswordEncoder()` was deprecated in Spring Security 5 and **fully removed in Spring Security 7.0**. On this project's **Spring Security 7.0.4**, the tutorial code will not compile. A dedicated `BCryptPasswordEncoder` bean is the correct replacement. Passwords are properly hashed before storage and the encoder is reusable across the application.
 
 ---
 
@@ -220,7 +220,7 @@ class ProductControllerTest {
 }
 ```
 
-**Reason:** `@WebMvcTest` is faster and more focused — it loads only the web layer (controller + exception handler) and mocks the service, avoiding full application context startup and database setup. This makes it a true unit test of the controller's HTTP behaviour. Note: `TestRestTemplate` is also being steered toward deprecation in Boot 4.x in favour of `RestTestClient`, making the `MockMvc` approach the more future-proof choice.
+**Reason:** `@WebMvcTest` is faster and more focused. It loads only the web layer (controller + exception handler) and mocks the service, avoiding full application context startup and database setup. This makes it a true unit test of the controller's HTTP behaviour. Note: `TestRestTemplate` is also being steered toward deprecation in Boot 4.x in favour of `RestTestClient`, making the `MockMvc` approach the more future-proof choice.
 
 ---
 
