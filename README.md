@@ -86,7 +86,7 @@ All endpoints require **HTTP Basic Authentication**.
 | Username | `user` |
 | Password | `password` |
 
-> **Note:** Credentials are configured in `SecurityConfig.java` using an in-memory user store with BCrypt password hashing. This is suitable for development — replace with a persistent user store for production.
+> **Note:** Credentials are configured in `SecurityConfig.java` using an in-memory user store with BCrypt password hashing. This is suitable for development, replace with a persistent user store for production.
 
 Example with curl:
 ```bash
